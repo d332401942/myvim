@@ -55,7 +55,7 @@ set nocursorline
 " 覆盖文件时不备份
 set nobackup
 " 自动切换当前目录为当前文件所在的目录
-set autochdir
+"set autochdir
 " 搜索时忽略大小写，但在有一个或以上大写字母时仍大小写敏感
 set ignorecase
 set smartcase
@@ -111,7 +111,7 @@ set shortmess=atl
 set sessionoptions=blank,buffers,curdir,folds,help,options,tabpages,winsize,slash,unix,resize
 
 " {{{ 折叠配置
-set foldenable
+"set foldenable
 " 设置语法折叠
 " manual  手工定义折叠
 " indent  更多的缩进表示更高级别的折叠
@@ -119,7 +119,7 @@ set foldenable
 " syntax  用语法高亮来定义折叠
 " diff    对没有更改的文本进行折叠
 " marker  对文中的标志折叠
-set foldmethod=marker
+"set foldmethod=marker
 "折叠相关的快捷键
 "zR 打开所有的折叠
 "za Open/Close (toggle) a folded group of lines.
@@ -130,7 +130,7 @@ set foldmethod=marker
 "zC 循环关闭 (Close) 在光标下的所有折叠
 "zM 关闭所有可折叠区域
 " 设置折叠区域的宽度
-set foldcolumn=2
+"set foldcolumn=2
 " 设置折叠层数为
 "setlocal foldlevel=1
 " 新建的文件，刚打开的文件不折叠
@@ -151,7 +151,7 @@ vnoremap <S-Del> d"+P
 "设置代码折叠方式为 手工  indent
 "set foldmethod=indent
 "设置代码块折叠后显示的行数
-set foldexpr=1
+"set foldexpr=1
 
 if has("gui_running")
     set guioptions-=m " 隐藏菜单栏
@@ -244,7 +244,7 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
 
 let Tlist_Auto_Highlight_Tag = 1
-let Tlist_Auto_Open = 1
+let Tlist_Auto_Open = 0
 let Tlist_Auto_Update = 1
 let Tlist_Close_On_Select = 0
 let Tlist_Compact_Format = 0
@@ -271,3 +271,4 @@ map <F10> :TlistToggle<cr>
 " }}}
 hi Comment ctermfg=0
 hi Comment cterm=bold
+set nu
