@@ -272,3 +272,13 @@ map <F10> :TlistToggle<cr>
 hi Comment ctermfg=0
 hi Comment cterm=bold
 set nu
+set nocompatible               " be iMproved
+filetype off                   " required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" let Vundle manage Vundle
+" " " required! 
+Bundle 'gmarik/vundle'
+Bundle 'cespare/vim-golang'
+filetype plugin indent on
+syntax on
